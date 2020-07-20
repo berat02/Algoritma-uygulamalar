@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/1.buyuk-olani-bulma.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Birbirinden farklı olarak verilen iki adet sayıdan,<br/> büyük olanı bulup gösteren algoritma ve akış diyagramını tasarlama2
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla<br> 2) sayı1 Giriniz<br> 3) sayı2 Giriniz<br> 4) sayı1 > sayı2<br> 5) sayı1 büyüktür yaz<br> 6) sayı2 > sayı1<br> 7) sayı2 büyüktür yaz<br> 8) Bitir
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function buyuk_olani_bul(){<br> var sayi1 = Number(document.getElementById('sayi1').value);<br> var sayi2 = Number(document.getElementById('sayi2').value);<br> var sonuc = document.getElementById('sonuc');<br> if(sayi1 > sayi2){<br>sonuc.value
+                            =("Sayı1 :) "+ sayi1 +" Daha Büyük");<br> }else if(sayi1
+                            < sayi2){<br>
+                                sonuc.value =("Sayı2 :) "+ sayi2 +" Daha Büyük");<br> }else{
+                                <br> sonuc.value =("Eşit");<br> }
+                                <br> }
+                                <br>
+                        </p>
+                        <img src="../media/script-img1.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input id="sayi1" type="number" placeholder="1. Sayıyı Giriniz" />
+                    <input id="sayi2" type="number" placeholder="2. Sayıyı Giriniz" />
+                    <input type="button" onclick="buyuk_olani_bul()" value="onaylayınız" />
+                    <input id="sonuc" type="text" placeholder="Sonuç" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
