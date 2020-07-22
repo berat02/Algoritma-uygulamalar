@@ -35,3 +35,10 @@ function pozitif_negatif_bulma(){
         sonuc.value = (sayi+" Sayı Sıfırdır");
     }
 }
+function on_kere_yaz(){
+    test="";
+    for(var i = 1; i <= 10; i++){
+        test += "berat"+"<br>"
+        document.getElementById('sonuc').innerHTML = test;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/4.yazıyı-10kere-yazma.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Ekrana 10 defa<br> programcının adını yazan java script ve algoritmayı yapınız.
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) i = 1<br>
+                    3) yaz "Berat"<br>
+                    4) i = ++1<br>
+                    5) Eğer i < = 10 ise<br>
+                    6) git adım 3 e<br>
+                    7) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function on_kere_yaz(){<br>
+                                test="";<br>
+                                for(var i = 1; i <= 10; i++){<br>
+                                    test += "berat"<br>
+                                    document.getElementById('sonuc').innerHTML = test;<br>
+                                }<br>
+                            }
+                        </p>
+                        <img src="../media/script-img4.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input type="button" onclick="on_kere_yaz()" value="onaylayınız" />
+                    <h6 id="sonuc"></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
