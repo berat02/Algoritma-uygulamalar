@@ -111,3 +111,18 @@ function geçti_hesaplama(){
        sonuc.style.color="green";
     }
 }
+function ortalama_hesaplama(){
+    var not1_element= Number(document.getElementById('not1').value);
+    var not2_element = Number(document.getElementById('not2').value);
+    var yazili_element = Number(document.getElementById('yazili').value);
+    var sonuc = document.getElementById("sonuc");
+
+    var ortalama = (not1_element+not2_element+yazili_element) /3;
+    if(ortalama >= 50){
+        sonuc.innerHTML = "Tebrikler Geçtiniz"
+        sonuc.style.color="green";
+    }else{
+        sonuc.innerHTML = "Üzgünüm Geçemediniz"
+        sonuc.style.color="red";
+    }
+}
