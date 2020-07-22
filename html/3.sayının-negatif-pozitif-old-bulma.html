@@ -3,7 +3,7 @@
 
 <head>
     <title>Büyük Olan Sayıyı Bulma</title>
-    <link rel="stylesheet" href="../style/2.vize-final-hesaplama.css" />
+    <link rel="stylesheet" href="../style/3.sayının-negatif-pozitif-old-bulma.css" />
     <script src="../script.js"></script>
 </head>
 
@@ -14,7 +14,7 @@
                 <a href="../index.html"><img src="../media/home.png" /></a>
             </div>
             <div class="soru">
-                Girilen vize ve final notlarına göre öğrencinin dersten geçip geçmediğini bulan java script ve algoritma'sını tasarlama.
+                Verilen tamsayının sıfır, pozitif ya da negatif olup olmadığını bulan java script ve algoritma'sını tasarlama
             </div>
             <div><img src="../media/github.png" /></div>
         </div>
@@ -23,13 +23,13 @@
                 <div class="section-header">Algoritma</div>
                 <div class="section">
                     1) Başla <br>
-                    2) Vize notu Gir<br>
-                    3) Final notu Gir<br>
-                    4) Ortalama = vize * 0.40 + final * 0.60<br>
-                    5) Eğer ortalama >= 60 ise<br>
-                    6) Öğrenci geçti<br>
-                    7) Değilse <br>
-                    8) Öğrenci geçemedi<br>
+                    2) Sayı giriniz(sayi)<br>
+                    3) Eğer Sayi > 0<br>
+                    4) Sayı pozitiftir<br>
+                    5) Eğer Sayi < 0<br>
+                    6) Sayı negatiftir<br>
+                    7) değilse<br>
+                    8) Sayı 0'dır<br>
                     9) Bitir
                 </div>
             </div>
@@ -38,19 +38,19 @@
                 <div class="section">
                     <div class="js">
                         <p>
-                            function vize_final_hesapla(){<br>
-                                var vize = Number(document.getElementById('vize').value);<br>
-                                var final = Number(document.getElementById('final').value);<br>
+                            function pozitif_negatif_bulma(){<br>
+                                var sayi = Number(document.getElementById('sayi').value);<br>
                                 var sonuc = document.getElementById('sonuc');<br>
-                                var ortalama = vize * 0.40 + final * 0.60;<br>
-                                if(ortalama  >= 60){<br>
-                                    sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçti");<br>
+                                if(sayi > 0){<br>
+                                    sonuc.value = (sayi+"Sayı Pozitiftir");<br>
+                                }else if(sayi < 0){<br>
+                                    sonuc.value = (sayi+"Sayı Negatiftir");<br>
                                 }else{<br>
-                                    sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçemedi");<br>
+                                    sonuc.value = (sayi+"Sayı Sıfırdır");<br>
                                 }<br>
                             }
                         </p>
-                        <img src="../media/script-img2.PNG">
+                        <img src="../media/script-img3.PNG">
                     </div>
                 </div>
             </div>
@@ -58,9 +58,8 @@
             <div class="section-panel">
                 <div class="section-header">Örnek</div>
                 <div class="section">
-                    <input id="vize" type="number" placeholder="Vize Notunu Giriniz" />
-                    <input id="final" type="number" placeholder="Vize Notunu Giriniz" />
-                    <input type="button" onclick="vize_final_hesapla()" value="onaylayınız" />
+                    <input id="sayi" type="number" placeholder="Sayı Giriniz" />
+                    <input type="button" onclick="pozitif_negatif_bulma()" value="onaylayınız" />
                     <input id="sonuc" type="text" placeholder="Sonuç" disabled/>
                 </div>
             </div>
