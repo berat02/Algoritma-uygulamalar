@@ -100,3 +100,14 @@ function gerilim_hesaplama(){
     var gerilim = akım_element * direnc_element;
     document.getElementById("sonuc").innerHTML = gerilim;
 }
+function geçti_hesaplama(){
+    var not_element= Number(document.getElementById('not').value);
+    var sonuc = document.getElementById("sonuc");
+    if(not_element >= 50){
+        sonuc.innerHTML = "Tebrikler Dersten Geçtiniz";
+        sonuc.style.color="green";
+    }else{
+       sonuc.innerHTML = "Üzgünüm Dersten Geçemediniz";
+       sonuc.style.color="green";
+    }
+}
