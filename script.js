@@ -87,3 +87,10 @@ function vize_final_ortalama_hesapla(){
 
     document.getElementById("ortalama").innerHTML = ortalama;
 }
+function ucgenin_alani_hesaplama(){
+    var yukseklik_element = Number(document.getElementById('yukseklik').value);
+    var taban_element = Number(document.getElementById('taban').value);
+    var alan = (yukseklik_element * taban_element) /2;
+    
+    document.getElementById("sonuc").innerHTML = alan;
+}

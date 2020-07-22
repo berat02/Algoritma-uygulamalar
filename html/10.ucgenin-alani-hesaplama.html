@@ -14,7 +14,7 @@
                 <a href="../index.html"><img src="../media/home.png" /></a>
             </div>
             <div class="soru">
-                Bir öğrencinin sınavda almış olduğu notlar neticesinde ders ortalaması bulan programın  JavaScript ve algoritmasını yapınız.
+                Yükseklik ve taban uzunluğu<br> klaveden girilen üçgenin alanını hesaplayan uygulamayı gerçekleştiriniz .
             </div>
             <div><img src="../media/github.png" /></div>
         </div>
@@ -23,10 +23,10 @@
                 <div class="section-header">Algoritma</div>
                 <div class="section">
                     1) Başla <br>
-                    2) vize notu giriniz<br>
-                    3) final notu giriniz<br>
-                    4) Ortalama = ( vizenotu*30/100)+(finalnotu*70/100)<br>
-                    5) yazdır(ortalama)
+                    2) yükseklik gir<br>
+                    3) taban uzunluğu gir<br>
+                    4) Alan = (yükseklik*taban) /2<br>
+                    5) yazdır(alan)
                     6) Bitir
                 </div>
             </div>
@@ -35,15 +35,15 @@
                 <div class="section">
                     <div class="js">
                         <p>
-                            function vize_final_ortalama_hesapla(){<br>
-                                var vize = Number(document.getElementById('vize').value);<br>
-                                var final = Number(document.getElementById('final').value);<br>
-                                var ortalama = ( vize * 30/100) + (final * 70/100);<br>
-                            
-                                document.getElementById("ortalama").innerHTML = ortalama;<br>
+                            function ucgenin_alani_hesaplama(){<br>
+                                var yukseklik_element = Number(document.getElementById('yukseklik').value);<br>
+                                var taban_element = Number(document.getElementById('taban').value);<br>
+                                var alan = (yukseklik_element * taban_element) /2;<br>
+                                
+                                document.getElementById("sonuc").innerHTML = alan;<br>
                             }
                         </p>
-                        <img src="../media/script-img9.PNG">
+                        <img src="../media/script-img10.PNG">
                     </div>
                 </div>
             </div>
@@ -51,10 +51,10 @@
             <div class="section-panel">
                 <div class="section-header">Örnek</div>
                 <div class="section">
-                    <input id="vize" type="number" placeholder="Vize Notu">
-                    <input id="final" type="number" placeholder="Final Notu">
-                    <input type="button" onclick="vize_final_ortalama_hesapla()" value="onaylayınız" />
-                    <div id="ortalama"></div>
+                    <input id="yukseklik" type="number" placeholder="Yükseklik Giriniz">
+                    <input id="taban" type="number" placeholder="Taban Giriniz">
+                    <input type="button" onclick="ucgenin_alani_hesaplama()" value="onaylayınız" />
+                    <div id="sonuc"></div>
                 </div>
             </div>
         </div>
