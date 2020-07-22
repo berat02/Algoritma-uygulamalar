@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/2.vize-final-hesaplama.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Girilen vize ve final notlarına göre öğrencinin dersten geçip geçmediğini bulan algoritma ve akış diyagramını tasarlayınız.
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) Vize notu Gir<br>
+                    3) Final notu Gir<br>
+                    4) Ortalama = vize * 0.40 + final * 0.60<br>
+                    5) Eğer ortalama >= 60 ise<br>
+                    6) Öğrenci geçti<br>
+                    7) Değilse <br>
+                    8) Öğrenci geçemedi<br>
+                    9) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function vize_final_hesapla(){<br>
+                                var vize = Number(document.getElementById('vize').value);<br>
+                                var final = Number(document.getElementById('final').value);<br>
+                                var sonuc = document.getElementById('sonuc');<br>
+                                var ortalama = vize * 0.40 + final * 0.60;<br>
+                                if(ortalama  >= 60){<br>
+                                    sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçti");<br>
+                                }else{<br>
+                                    sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçemedi");<br>
+                                }<br>
+                            }
+                        </p>
+                        <img src="../media/script-img2.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input id="vize" type="number" placeholder="Vize Notunu Giriniz" />
+                    <input id="final" type="number" placeholder="Vize Notunu Giriniz" />
+                    <input type="button" onclick="vize_final_hesapla()" value="onaylayınız" />
+                    <input id="sonuc" type="text" placeholder="Sonuç" disabled/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
