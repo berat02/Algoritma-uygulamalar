@@ -42,3 +42,12 @@ function on_kere_yaz(){
         document.getElementById('sonuc').innerHTML = test;
     }
 }
+function tek_sayilari_yaz(){
+    var test="";
+    for(var i=0;i<=100;i++){
+        if(!(i % 2) == 0){
+            test += i+" ";
+            document.getElementById("sonuc").innerHTML = test;
+        }
+    }
+}

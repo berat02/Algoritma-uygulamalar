@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/5.1-100-arasindaki-tek-sayilari-yazma.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                1’den 100’e kadar tek sayıları yazdıran java script ve algoritma'yı yapınız.
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) i = 1<br>
+                    3) Eğer !(i % 2 == 0)<br>
+                    4) i = ++1<br>
+                    5) Eğer i < = 100 ise<br>
+                    6) git adım 3 e<br>
+                    7) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function tek_sayilari_yaz(){<br>
+                                var test="";<br>
+                                for(var i=0;i<=100;i++){<br>
+                                    if(!(i % 2) == 0){<br>
+                                        test += i+" ";<br>
+                                        document.getElementById("sonuc").innerHTML = test;<br>
+                                    }<br>
+                                }<br>
+                            }
+                        </p>
+                        <img src="../media/script-img5.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input type="button" onclick="tek_sayilari_yaz()" value="onaylayınız" />
+                    <h6 id="sonuc"></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
