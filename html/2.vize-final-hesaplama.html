@@ -3,7 +3,7 @@
 
 <head>
     <title>Büyük Olan Sayıyı Bulma</title>
-    <link rel="stylesheet" href="../style/2.vize-final-hesaplama.css" />
+    <link rel="stylesheet" href="../style/section.css" />
     <script src="../script.js"></script>
 </head>
 
@@ -45,8 +45,10 @@
                                 var ortalama = vize * 0.40 + final * 0.60;<br>
                                 if(ortalama  >= 60){<br>
                                     sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçti");<br>
+                                    sonuc.style.color = "green";<br>
                                 }else{<br>
                                     sonuc.value = ("Ort: "+ortalama+" Öğrenci Geçemedi");<br>
+                                    sonuc.style.color = "red";<br>
                                 }<br>
                             }
                         </p>

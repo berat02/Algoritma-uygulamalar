@@ -39,8 +39,10 @@ function on_kere_yaz(){
     test="";
     for(var i = 1; i <= 10; i++){
         test += "berat"+"<br>"
-        document.getElementById('sonuc').innerHTML = test;
+        debugger
+       
     }
+    document.getElementById('sonuc').innerHTML = test;
 }
 function tek_sayilari_yaz(){
     var test="";
@@ -57,4 +59,17 @@ function fiyata_kdv_ekle(){
     var kdv = fiyat * 1.18;
 
     sonuc.value = (kdv);
+}
+function hesapla(){
+    var toplam = Number(document.getElementById('toplam').value);
+    var ortalama = Number(document.getElementById('ortalama').value);
+    var toplama = 0;
+    var ortalama = 0;
+    for(var i = 1; i <= 5 ; i++){
+        toplama += i;
+        ortalama +=i /5;
+
+    }
+    document.getElementById("toplam").innerHTML = toplama;
+    document.getElementById("ortalama").innerHTML = ortalama;
 }

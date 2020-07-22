@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/section.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Beş sayının toplamını ve ortalamasını veren programa<br> ait java script ve algoritmayı oluşturunuz.
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) toplam = 0<br>
+                    3) ortalama = 0<br>
+                    4) i=1<br>
+                    5) i<=5<br>
+                    6) i++<br>
+                    7) toplam += i<br>
+                    8) yazdır<br>
+                    9) ortalama += i /5<br>
+                    10) yazdır<br>
+                    11) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function hesapla(){<br>
+                                var toplam = Number(document.getElementById('toplam').value);<br>
+                                var ortalama = Number(document.getElementById('ortalama').value);<br>
+                                var toplama = 0;<br>
+                                var ortalama = 0;<br>
+                                for(var i = 1; i <= 5 ; i++){<br>
+                                    toplama += i;<br>
+                                    ortalama +=i /5;<br>
+                                }<br>
+                                document.getElementById("toplam").innerHTML = toplama;<br>
+                                document.getElementById("ortalama").innerHTML = ortalama;<br>
+                            }
+                        </p>
+                        <img src="../media/script-img7.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input type="button" onclick="hesapla()" value="onaylayınız" />
+                    <p id="toplam">Toplamı</p>
+                    <p id="ortalama">Ortalaması</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
