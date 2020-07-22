@@ -36,20 +36,16 @@
                 <div class="section">
                     <div class="js">
                         <p>
-                            function hesapla(){<br>
-                                var toplam = Number(document.getElementById('toplam').value);<br>
-                                var ortalama = Number(document.getElementById('ortalama').value);<br>
-                                var toplama = 0;<br>
-                                var ortalama = 0;<br>
-                                for(var i = 1; i <= 5 ; i++){<br>
-                                    toplama += i;<br>
-                                    ortalama +=i /5;<br>
-                                }<br>
-                                document.getElementById("toplam").innerHTML = toplama;<br>
-                                document.getElementById("ortalama").innerHTML = ortalama;<br>
+                            function vergi_kar_hesapla(){<br>
+                                var fiyat = Number(document.getElementById('fiyat').value);<br>
+                                var vergi = Number(document.getElementById('vergi').value);<br>
+                                var kar = Number(document.getElementById('kar').value);<br>
+                                var satis_fiyat = fiyat =fiyat + (fiyat * vergi/100)+(fiyat * kar/100);<br>
+                            
+                                document.getElementById("son-fiyat").innerHTML = satis_fiyat;<br>
                             }
                         </p>
-                        <img src="../media/script-img7.PNG">
+                        <img src="../media/script-img8.PNG">
                     </div>
                 </div>
             </div>
