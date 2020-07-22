@@ -40,7 +40,6 @@ function on_kere_yaz(){
     for(var i = 1; i <= 10; i++){
         test += "berat"+"<br>"
         debugger
-       
     }
     document.getElementById('sonuc').innerHTML = test;
 }
@@ -73,3 +72,12 @@ function hesapla(){
     document.getElementById("toplam").innerHTML = toplama;
     document.getElementById("ortalama").innerHTML = ortalama;
 }
+function vergi_kar_hesapla(){
+    var fiyat = Number(document.getElementById('fiyat').value);
+    var vergi = Number(document.getElementById('vergi').value);
+    var kar = Number(document.getElementById('kar').value);
+    var satis_fiyat = fiyat =fiyat + (fiyat * vergi/100)+(fiyat * kar/100);
+
+    document.getElementById("son-fiyat").innerHTML = satis_fiyat;
+}
+

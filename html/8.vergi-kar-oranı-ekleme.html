@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/section.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Bir ürünü alış fiyatı üzerinden klavyeden<br> vergi oranı ve kar oranı eklenerek satış fiyatına hesaplayan programın algoritması
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) satış fiyatı giriniz<br>
+                    3) vergi giriniz<br>
+                    4) kar giriniz<br>
+                    5) Satış fiyat = fiyat + (fiyat * vergi/100)+(fiyat * kar/100)<br>
+                    6) yazdır<br>
+                    7) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function hesapla(){<br>
+                                var toplam = Number(document.getElementById('toplam').value);<br>
+                                var ortalama = Number(document.getElementById('ortalama').value);<br>
+                                var toplama = 0;<br>
+                                var ortalama = 0;<br>
+                                for(var i = 1; i <= 5 ; i++){<br>
+                                    toplama += i;<br>
+                                    ortalama +=i /5;<br>
+                                }<br>
+                                document.getElementById("toplam").innerHTML = toplama;<br>
+                                document.getElementById("ortalama").innerHTML = ortalama;<br>
+                            }
+                        </p>
+                        <img src="../media/script-img7.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input id="fiyat" type="number" placeholder="Ürün Fiyatı">
+                    <input id="vergi" type="number" placeholder="Vergi Miktarı">
+                    <input id="kar" type="number" placeholder="Kar Miktarı">
+                    <input type="button" onclick="vergi_kar_hesapla()" value="onaylayınız" />
+                    <div id="son-fiyat"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
