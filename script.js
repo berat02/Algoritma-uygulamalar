@@ -135,3 +135,11 @@ function tek_cift_bulma(){
         sonuc.innerHTML = "Tek Sayıdır"
     }
 }
+function hesapla(){
+    var sayi_element= Number(document.getElementById('sayi').value);
+    if(sayi_element %3 == 0 && sayi_element %5 == 0){
+        sonuc.innerHTML = "Bölünebiliyo"
+    }else{
+        sonuc.innerHTML = "Malesef Bölünemiyo"
+    }
+}
