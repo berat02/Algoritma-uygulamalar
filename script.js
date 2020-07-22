@@ -126,3 +126,12 @@ function ortalama_hesaplama(){
         sonuc.style.color="red";
     }
 }
+function tek_cift_bulma(){
+    var sayi_element= Number(document.getElementById('sayi').value);
+    var sonuc = document.getElementById("sonuc");
+    if(sayi_element %2 == 0){
+        sonuc.innerHTML = ("Çift Sayıdır")
+    }else{
+        sonuc.innerHTML = "Tek Sayıdır"
+    }
+}
