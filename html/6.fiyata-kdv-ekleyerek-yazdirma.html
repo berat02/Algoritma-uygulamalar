@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Büyük Olan Sayıyı Bulma</title>
+    <link rel="stylesheet" href="../style/6.fiyata-kdv-ekleyerek-yazdirma.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Klavyeden girilen fiyatı, KDV(%18) ekleyerek ekrana yazdırın.
+            </div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) Fiyat giriniz(fiyat)<br>
+                    3) Sonuc = fiyat * 1.18<br>
+                    4) Yaz sonuc<br>
+                    5) Bitir
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function fiyata_kdv_ekle(){<br>
+                                var fiyat = Number(document.getElementById('fiyat').value);<br>
+                                var sonuc = document.getElementById('sonuc');<br>
+                                var kdv = fiyat * 1.18;<br>
+                            
+                                sonuc.value = (kdv);<br>
+                            }
+                        </p>
+                        <img src="../media/script-img6.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input id="fiyat" type="number" placeholder="Fiyat Giriniz">
+                    <input type="button" onclick="fiyata_kdv_ekle()" value="onaylayınız" />
+                    <input id="sonuc" type="number" placeholder="sonuç" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

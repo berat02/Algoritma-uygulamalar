@@ -51,3 +51,10 @@ function tek_sayilari_yaz(){
         }
     }
 }
+function fiyata_kdv_ekle(){
+    var fiyat = Number(document.getElementById('fiyat').value);
+    var sonuc = document.getElementById('sonuc');
+    var kdv = fiyat * 1.18;
+
+    sonuc.value = (kdv);
+}
