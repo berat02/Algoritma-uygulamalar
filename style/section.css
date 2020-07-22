@@ -71,6 +71,7 @@
 .js {
     margin: 10px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
     font-size: 13px;
 }

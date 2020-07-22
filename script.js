@@ -94,3 +94,9 @@ function ucgenin_alani_hesaplama(){
     
     document.getElementById("sonuc").innerHTML = alan;
 }
+function gerilim_hesaplama(){
+    var akım_element= Number(document.getElementById('akım').value);
+    var direnc_element = Number(document.getElementById('direnc').value);
+    var gerilim = akım_element * direnc_element;
+    document.getElementById("sonuc").innerHTML = gerilim;
+}
