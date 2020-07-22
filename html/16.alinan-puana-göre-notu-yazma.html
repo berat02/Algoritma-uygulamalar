@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Java Script</title>
+    <link rel="stylesheet" href="../style/section.css" />
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-header">
+            <div>
+                <a href="../index.html"><img src="../media/home.png" /></a>
+            </div>
+            <div class="soru">
+                Öğrencinin sınavdan almış olduğu<br> puana göre notunu ekrana yazdıran programın kodlarını yazınız</div>
+            <div><img src="../media/github.png" /></div>
+        </div>
+        <div class="nav-section">
+            <div class="section-panel">
+                <div class="section-header">Algoritma</div>
+                <div class="section">
+                    1) Başla <br>
+                    2) sayı gir<br>
+                    3) sayı > 0 ve sayı < 50 ise<br>
+                    4) notu( 1 )<br>
+                    5) sayı >= 50 ve sayı < 60 ise<br>
+                    6) notu( 2 )<br>
+                    7) sayı >= 60 ve sayı < 70 ise<br>
+                    8) notu( 3 )<br>
+                    9) sayı >= 70 ve sayı < 85 ise<br>
+                    10) notu( 4 )<br>
+                    11) sayı >= 85 ve sayı <= 100 ise<br>
+                    12) notu( 5 )<br>
+                    13) Bitir<br>
+                </div>
+            </div>
+            <div class="section-panel">
+                <div class="section-header">Java Script</div>
+                <div class="section">
+                    <div class="js">
+                        <p>
+                            function notu_bul() {<br>
+                                var sayi = Number(document.getElementById("sayi").value);<br>
+                                var sonuc = document.getElementById("sonuc");<br>
+                                if (sayi > 0 && sayi < 50) {<br>
+                                  sonuc.innerHTML = "Notun: 1";<br>
+                                }else if (sayi >=50 && sayi < 60) {<br>
+                                  sonuc.innerHTML = "Notun: 2";<br>
+                                }else if (sayi >=60 && sayi < 70) {<br>
+                                  sonuc.innerHTML = "Notun: 3";<br>
+                                }else if (sayi >=70 && sayi < 85) {<br>
+                                  sonuc.innerHTML = "Notun: 4";<br>
+                                }else if (sayi >=85 && sayi <=100) {<br>
+                                  sonuc.innerHTML = "Notun: 5";<br>
+                                }else{<br>
+                                  sonuc.innerHTML = "Notu Düzgün Giriniz";<br>
+                                }<br>
+                              }
+                        </p>
+                        <img src="../media/script-img16.PNG">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-panel">
+                <div class="section-header">Örnek</div>
+                <div class="section">
+                    <input id="sayi" type="number" placeholder="Sayı Giriniz">
+                    <input type="button" onclick="notu_bul()" value="onaylayınız" />
+                    <div id="sonuc"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
