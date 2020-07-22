@@ -80,4 +80,10 @@ function vergi_kar_hesapla(){
 
     document.getElementById("son-fiyat").innerHTML = satis_fiyat;
 }
+function vize_final_ortalama_hesapla(){
+    var vize = Number(document.getElementById('vize').value);
+    var final = Number(document.getElementById('final').value);
+    var ortalama = ( vize * 30/100) + (final * 70/100);
 
+    document.getElementById("ortalama").innerHTML = ortalama;
+}
