@@ -1,63 +1,87 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Yükseklik ve taban uzunluğu<br> klaveden girilen üçgenin alanını hesaplayan uygulamayı gerçekleştiriniz .
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) yükseklik gir<br>
-                    3) taban uzunluğu gir<br>
-                    4) Alan = (yükseklik*taban) /2<br>
-                    5) yazdır(alan)
-                    6) Bitir
-                </div>
-            </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function ucgenin_alani_hesaplama(){<br>
-                                var yukseklik_element = Number(document.getElementById('yukseklik').value);<br>
-                                var taban_element = Number(document.getElementById('taban').value);<br>
-                                var alan = (yukseklik_element * taban_element) /2;<br>
-                                
-                                document.getElementById("sonuc").innerHTML = alan;<br>
-                            }
-                        </p>
-                        <img src="../media/script-img10.PNG">
-                    </div>
-                </div>
-            </div>
+        <div class="soru">
+          Yükseklik ve taban uzunluğu<br />
+          klaveden girilen üçgenin alanını hesaplayan uygulamayı
+          gerçekleştiriniz .
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) yükseklik gir<br />
+            3) taban uzunluğu gir<br />
+            4) Alan = (yükseklik*taban) /2<br />
+            5) yazdır(alan) 6) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function ucgenin_alani_hesaplama(){<br />
+                var yukseklik_element =
+                Number(document.getElementById('yukseklik').value);<br />
+                var taban_element =
+                Number(document.getElementById('taban').value);<br />
+                var alan = (yukseklik_element * taban_element) /2;<br />
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="yukseklik" type="number" placeholder="Yükseklik Giriniz">
-                    <input id="taban" type="number" placeholder="Taban Giriniz">
-                    <input type="button" onclick="ucgenin_alani_hesaplama()" value="onaylayınız" />
-                    <div id="sonuc"></div>
-                </div>
+                document.getElementById("sonuc").innerHTML = alan;<br />
+                }
+              </p>
+              <img src="../media/script-img10.PNG" />
             </div>
+          </div>
         </div>
+
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input
+              id="yukseklik"
+              type="number"
+              placeholder="Yükseklik Giriniz"
+            />
+            <input id="taban" type="number" placeholder="Taban Giriniz" />
+            <input
+              type="button"
+              onclick="ucgenin_alani_hesaplama()"
+              value="onaylayınız"
+            />
+            <div id="sonuc"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script>
+      function ucgenin_alani_hesaplama() {
+        var yukseklik_element = Number(
+          document.getElementById("yukseklik").value
+        );
+        var taban_element = Number(document.getElementById("taban").value);
+        var alan = (yukseklik_element * taban_element) / 2;
+
+        document.getElementById("sonuc").innerHTML = alan;
+      }
+    </script>
+  </body>
 </html>

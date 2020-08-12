@@ -1,64 +1,81 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Kullanıcının klavyeden girdiği sayı 3’ e ve 5’ e tam bölünüyorsa<br> ekrana tam bölünüyor yazan bölünmüyorsa bölünmüyor yazan algoritmayı oluşturun.</div>
-                <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) sayı gir<br>
-                    3) sayı %3 ve %5 tam bölünüyorsa<br>
-                    4) sayı tam bölünüyor yaz<br>
-                    5) değilse<br>
-                    6) sayı tam bölünmüyor yaz<br>
-                    7) Yazdır<br>
-                    8) Bitir
-                </div>
+        <div class="soru">
+          Kullanıcının klavyeden girdiği sayı 3’ e ve 5’ e tam bölünüyorsa<br />
+          ekrana tam bölünüyor yazan bölünmüyorsa bölünmüyor yazan algoritmayı
+          oluşturun.
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) sayı gir<br />
+            3) sayı %3 ve %5 tam bölünüyorsa<br />
+            4) sayı tam bölünüyor yaz<br />
+            5) değilse<br />
+            6) sayı tam bölünmüyor yaz<br />
+            7) Yazdır<br />
+            8) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function hesapla(){<br />
+                var sayi_element=
+                Number(document.getElementById('sayi').value);<br />
+                if(sayi_element %3 == 0 && sayi_element %5 == 0){<br />
+                sonuc.innerHTML = "Bölünebiliyo"<br />
+                }else{<br />
+                sonuc.innerHTML = "Malesef Bölünemiyo"<br />
+                }<br />
+                }
+              </p>
+              <img src="../media/script-img15.PNG" />
             </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function hesapla(){<br>
-                                var sayi_element= Number(document.getElementById('sayi').value);<br>
-                                if(sayi_element %3 == 0 && sayi_element %5 == 0){<br>
-                                    sonuc.innerHTML = "Bölünebiliyo"<br>
-                                }else{<br>
-                                    sonuc.innerHTML = "Malesef Bölünemiyo"<br>
-                                }<br>
-                            }
-                        </p>
-                        <img src="../media/script-img15.PNG">
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="sayi" type="number" placeholder="Sayı Giriniz">
-                    <input type="button" onclick="hesapla()" value="onaylayınız" />
-                    <div id="sonuc"></div>
-                </div>
-            </div>
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="sayi" type="number" placeholder="Sayı Giriniz" />
+            <input type="button" onclick="hesapla()" value="onaylayınız" />
+            <div id="sonuc"></div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script>
+      function hesapla() {
+        var sayi_element = Number(document.getElementById("sayi").value);
+        var sonuc = document.getElementById("sonuc");
+        if (sayi_element % 3 == 0 && sayi_element % 5 == 0) {
+          sonuc.innerHTML = "Bölünebiliyo";
+        } else {
+          sonuc.innerHTML = "Malesef Bölünemiyo";
+        }
+      }
+    </script>
+  </body>
 </html>

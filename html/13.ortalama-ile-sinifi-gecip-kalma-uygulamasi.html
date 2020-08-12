@@ -1,76 +1,108 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Bir öğrencinin derslerinden 2 not ve 1 sözlü klavyeden girilerek<br> başarı durumu ekrana “geçti” ve “kald”ı şeklinde yazan algoritmayı oluşturun.
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) not1 gir<br>
-                    3) not2 gir<br>
-                    4) yazılı notu gir<br>
-                    5) ortalama = not1+not2+yazılı /3<br>
-                    6) Eğer (ortalama >= 50)<br>
-                    7) öğrenci geçti<br>
-                    8) değilse<br>
-                    9) öğrenci kaldı<br>
-                    10) Bitir
-                </div>
-            </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function ortalama_hesaplama(){<br>
-                                var not1_element= Number(document.getElementById('not1').value);<br>
-                                var not2_element = Number(document.getElementById('not2').value);<br>
-                                var yazili_element = Number(document.getElementById('yazili').value);<br>
-                                var sonuc = document.getElementById("sonuc");<br>
-                            
-                                var ortalama = (not1_element+not2_element+yazili_element) /3;<br>
-                                if(ortalama >= 50){<br>
-                                    sonuc.innerHTML = "Tebrikler Geçtiniz"<br>
-                                    sonuc.style.color="green";<br>
-                                }else{<br>
-                                    sonuc.innerHTML = "Üzgünüm Geçemediniz"<br>
-                                    sonuc.style.color="red";<br>
-                                }<br>
-                            }
-                        </p>
-                        <img src="../media/script-img13.PNG">
-                    </div>
-                </div>
-            </div>
+        <div class="soru">
+          Bir öğrencinin derslerinden 2 not ve 1 sözlü klavyeden girilerek<br />
+          başarı durumu ekrana “geçti” ve “kald”ı şeklinde yazan algoritmayı
+          oluşturun.
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) not1 gir<br />
+            3) not2 gir<br />
+            4) yazılı notu gir<br />
+            5) ortalama = not1+not2+yazılı /3<br />
+            6) Eğer (ortalama >= 50)<br />
+            7) öğrenci geçti<br />
+            8) değilse<br />
+            9) öğrenci kaldı<br />
+            10) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function ortalama_hesaplama(){<br />
+                var not1_element=
+                Number(document.getElementById('not1').value);<br />
+                var not2_element =
+                Number(document.getElementById('not2').value);<br />
+                var yazili_element =
+                Number(document.getElementById('yazili').value);<br />
+                var sonuc = document.getElementById("sonuc");<br />
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="not1" type="number" placeholder="1. Notunuzu Giriniz">
-                    <input id="not2" type="number" placeholder="2 .Notunuzu Giriniz">
-                    <input id="yazili" type="number" placeholder="Yazılı Notunuzu Giriniz">
-                    <input type="button" onclick="ortalama_hesaplama()" value="onaylayınız" />
-                    <div id="sonuc"></div>
-                </div>
+                var ortalama = (not1_element+not2_element+yazili_element) /3;<br />
+                if(ortalama >= 50){<br />
+                sonuc.innerHTML = "Tebrikler Geçtiniz"<br />
+                sonuc.style.color="green";<br />
+                }else{<br />
+                sonuc.innerHTML = "Üzgünüm Geçemediniz"<br />
+                sonuc.style.color="red";<br />
+                }<br />
+                }
+              </p>
+              <img src="../media/script-img13.PNG" />
             </div>
+          </div>
         </div>
+
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="not1" type="number" placeholder="1. Notunuzu Giriniz" />
+            <input id="not2" type="number" placeholder="2 .Notunuzu Giriniz" />
+            <input
+              id="yazili"
+              type="number"
+              placeholder="Yazılı Notunuzu Giriniz"
+            />
+            <input
+              type="button"
+              onclick="ortalama_hesaplama()"
+              value="onaylayınız"
+            />
+            <div id="sonuc"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script>
+      function ortalama_hesaplama() {
+        var not1_element = Number(document.getElementById("not1").value);
+        var not2_element = Number(document.getElementById("not2").value);
+        var yazili_element = Number(document.getElementById("yazili").value);
+        var sonuc = document.getElementById("sonuc");
+
+        var ortalama = (not1_element + not2_element + yazili_element) / 3;
+        if (ortalama >= 50) {
+          sonuc.innerHTML = "Tebrikler Geçtiniz";
+          sonuc.style.color = "green";
+        } else {
+          sonuc.innerHTML = "Üzgünüm Geçemediniz";
+          sonuc.style.color = "red";
+        }
+      }
+    </script>
+  </body>
 </html>

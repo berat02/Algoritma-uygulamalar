@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Birbirinden farklı olarak verilen iki adet sayıdan,<br/> büyük olanı bulup gösteren java script ve algoritma'sını tasarlama.
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla<br> 2) sayı1 Giriniz<br> 3) sayı2 Giriniz<br> 4) sayı1 > sayı2<br> 5) sayı1 büyüktür yaz<br> 6) sayı2 > sayı1<br> 7) sayı2 büyüktür yaz<br> 8) Bitir
-                </div>
-            </div>
-
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function buyuk_olani_bul(){<br> var sayi1 = Number(document.getElementById('sayi1').value);<br> var sayi2 = Number(document.getElementById('sayi2').value);<br> var sonuc = document.getElementById('sonuc');<br> if(sayi1 > sayi2){<br>sonuc.value
-                            =("Sayı1 :) "+ sayi1 +" Daha Büyük");<br> }else if(sayi1
-                            < sayi2){<br>
-                                sonuc.value =("Sayı2 :) "+ sayi2 +" Daha Büyük");<br> }else{
-                                <br> sonuc.value =("Eşit");<br> }
-                                <br> }
-                                <br>
-                        </p>
-                        <img src="../media/script-img1.PNG">
-                    </div>
-                </div>
-            </div>
-
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="sayi1" type="number" placeholder="1. Sayıyı Giriniz" />
-                    <input id="sayi2" type="number" placeholder="2. Sayıyı Giriniz" />
-                    <input type="button" onclick="buyuk_olani_bul()" value="onaylayınız" />
-                    <input id="sonuc" type="text" placeholder="Sonuç" disabled/>
-                </div>
-            </div>
+        <div class="soru">
+          Birbirinden farklı olarak verilen iki adet sayıdan,<br />
+          büyük olanı bulup gösteren java script ve algoritma'sını tasarlama.
         </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla<br />
+            2) sayı1 Giriniz<br />
+            3) sayı2 Giriniz<br />
+            4) sayı1 > sayı2<br />
+            5) sayı1 büyüktür yaz<br />
+            6) sayı2 > sayı1<br />
+            7) sayı2 büyüktür yaz<br />
+            8) Bitir
+          </div>
+        </div>
+
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function buyuk_olani_bul(){<br />
+                var sayi1 = Number(document.getElementById('sayi1').value);<br />
+                var sayi2 = Number(document.getElementById('sayi2').value);<br />
+                var sonuc = document.getElementById('sonuc');<br />
+                if(sayi1 > sayi2){<br />sonuc.value =("Sayı1 :) "+ sayi1 +" Daha
+                Büyük");<br />
+                }else if(sayi1 < sayi2){<br />
+                sonuc.value =("Sayı2 :) "+ sayi2 +" Daha Büyük");<br />
+                }else{ <br />
+                sonuc.value =("Eşit");<br />
+                } <br />
+                }
+                <br />
+              </p>
+              <img src="../media/script-img1.PNG" />
+            </div>
+          </div>
+        </div>
+
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="sayi1" type="number" placeholder="1. Sayıyı Giriniz" />
+            <input id="sayi2" type="number" placeholder="2. Sayıyı Giriniz" />
+            <input
+              type="button"
+              onclick="buyuk_olani_bul()"
+              value="onaylayınız"
+            />
+            <input id="sonuc" type="text" placeholder="Sonuç" disabled />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script>
+      function buyuk_olani_bul() {
+        var sayi1 = Number(document.getElementById("sayi1").value);
+        var sayi2 = Number(document.getElementById("sayi2").value);
+        var sonuc = document.getElementById("sonuc");
 
+        if (sayi1 > sayi2) {
+          sonuc.value = "Sayı1 :) " + sayi1 + " Daha Büyük";
+        } else if (sayi1 < sayi2) {
+          sonuc.value = "Sayı2 :) " + sayi2 + " Daha Büyük";
+        } else {
+          sonuc.value = "Eşit";
+        }
+      }
+    </script>
+  </body>
 </html>

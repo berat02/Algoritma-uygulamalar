@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Ekrana 10 defa<br> programcının adını yazan java script ve algoritmayı yapınız.
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) i = 1<br>
-                    3) yaz "Berat"<br>
-                    4) i = ++1<br>
-                    5) Eğer i < = 10 ise<br>
-                    6) git adım 3 e<br>
-                    7) Bitir
-                </div>
+        <div class="soru">
+          Ekrana 10 defa<br />
+          programcının adını yazan java script ve algoritmayı yapınız.
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) i = 1<br />
+            3) yaz "Berat"<br />
+            4) i = ++1<br />
+            5) Eğer i < = 10 ise<br />
+            6) git adım 3 e<br />
+            7) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function on_kere_yaz(){<br />
+                test="";<br />
+                for(var i = 1; i <= 10; i++){<br />
+                test += "berat"<br />
+                document.getElementById('sonuc').innerHTML = test;<br />
+                }<br />
+                }
+              </p>
+              <img src="../media/script-img4.PNG" />
             </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function on_kere_yaz(){<br>
-                                test="";<br>
-                                for(var i = 1; i <= 10; i++){<br>
-                                    test += "berat"<br>
-                                    document.getElementById('sonuc').innerHTML = test;<br>
-                                }<br>
-                            }
-                        </p>
-                        <img src="../media/script-img4.PNG">
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input type="button" onclick="on_kere_yaz()" value="onaylayınız" />
-                    <h6 id="sonuc"></h6>
-                </div>
-            </div>
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input type="button" onclick="on_kere_yaz()" value="onaylayınız" />
+            <h6 id="sonuc"></h6>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script>
+      function on_kere_yaz() {
+        test = "";
+        for (var i = 1; i <= 10; i++) {
+          test += "berat" + "<br>";
+          debugger;
+        }
+        document.getElementById("sonuc").innerHTML = test;
+      }
+    </script>
+  </body>
 </html>

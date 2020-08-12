@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Kullanıcıdan alınan sayının<br> tek ya da çift olduğunu  kontrol edip ekranda yazdıran algoritmayı oluşturun</div>
-                <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) sayı gir gir<br>
-                    3) sayı %2 =0<br>
-                    4) sayı çift'tir<br>
-                    5) değilse<br>
-                    6) sayı tek'tir<br>
-                    7) Yazdır<br>
-                    8) Bitir
-                </div>
+        <div class="soru">
+          Kullanıcıdan alınan sayının<br />
+          tek ya da çift olduğunu kontrol edip ekranda yazdıran algoritmayı
+          oluşturun
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) sayı gir gir<br />
+            3) sayı %2 =0<br />
+            4) sayı çift'tir<br />
+            5) değilse<br />
+            6) sayı tek'tir<br />
+            7) Yazdır<br />
+            8) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function tek_cift_bulma(){<br />
+                var sayi_element=
+                Number(document.getElementById('sayi').value);<br />
+                var sonuc = document.getElementById("sonuc");<br />
+                if(sayi_element %2 == 0){<br />
+                sonuc.innerHTML = ("Çift Sayıdır")<br />
+                }else{<br />
+                sonuc.innerHTML = "Tek Sayıdır"<br />
+                }<br />
+                }
+              </p>
+              <img src="../media/script-img14.PNG" />
             </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function tek_cift_bulma(){<br>
-                                var sayi_element= Number(document.getElementById('sayi').value);<br>
-                                var sonuc = document.getElementById("sonuc");<br>
-                                if(sayi_element %2 == 0){<br>
-                                    sonuc.innerHTML = ("Çift Sayıdır")<br>
-                                }else{<br>
-                                    sonuc.innerHTML = "Tek Sayıdır"<br>
-                                }<br>
-                            }
-                        </p>
-                        <img src="../media/script-img14.PNG">
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="sayi" type="number" placeholder="Sayı Giriniz">
-                    <input type="button" onclick="tek_cift_bulma()" value="onaylayınız" />
-                    <div id="sonuc"></div>
-                </div>
-            </div>
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="sayi" type="number" placeholder="Sayı Giriniz" />
+            <input
+              type="button"
+              onclick="tek_cift_bulma()"
+              value="onaylayınız"
+            />
+            <div id="sonuc"></div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script>
+      function tek_cift_bulma() {
+        var sayi_element = Number(document.getElementById("sayi").value);
+        var sonuc = document.getElementById("sonuc");
+        if (sayi_element % 2 == 0) {
+          sonuc.innerHTML = "Çift Sayıdır";
+        } else {
+          sonuc.innerHTML = "Tek Sayıdır";
+        }
+      }
+    </script>
+  </body>
 </html>

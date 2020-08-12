@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Bir ürünü alış fiyatı üzerinden klavyeden<br> vergi oranı ve kar oranı eklenerek satış fiyatına hesaplayan programın algoritması
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) satış fiyatı giriniz<br>
-                    3) vergi giriniz<br>
-                    4) kar giriniz<br>
-                    5) Satış fiyat = fiyat + (fiyat * vergi/100)+(fiyat * kar/100)<br>
-                    6) yazdır<br>
-                    7) Bitir
-                </div>
-            </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function vergi_kar_hesapla(){<br>
-                                var fiyat = Number(document.getElementById('fiyat').value);<br>
-                                var vergi = Number(document.getElementById('vergi').value);<br>
-                                var kar = Number(document.getElementById('kar').value);<br>
-                                var satis_fiyat = fiyat =fiyat + (fiyat * vergi/100)+(fiyat * kar/100);<br>
-                            
-                                document.getElementById("son-fiyat").innerHTML = satis_fiyat;<br>
-                            }
-                        </p>
-                        <img src="../media/script-img8.PNG">
-                    </div>
-                </div>
-            </div>
+        <div class="soru">
+          Bir ürünü alış fiyatı üzerinden klavyeden<br />
+          vergi oranı ve kar oranı eklenerek satış fiyatına hesaplayan programın
+          algoritması
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) satış fiyatı giriniz<br />
+            3) vergi giriniz<br />
+            4) kar giriniz<br />
+            5) Satış fiyat = fiyat + (fiyat * vergi/100)+(fiyat * kar/100)<br />
+            6) yazdır<br />
+            7) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function vergi_kar_hesapla(){<br />
+                var fiyat = Number(document.getElementById('fiyat').value);<br />
+                var vergi = Number(document.getElementById('vergi').value);<br />
+                var kar = Number(document.getElementById('kar').value);<br />
+                var satis_fiyat = fiyat =fiyat + (fiyat * vergi/100)+(fiyat *
+                kar/100);<br />
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="fiyat" type="number" placeholder="Ürün Fiyatı">
-                    <input id="vergi" type="number" placeholder="Vergi Miktarı">
-                    <input id="kar" type="number" placeholder="Kar Miktarı">
-                    <input type="button" onclick="vergi_kar_hesapla()" value="onaylayınız" />
-                    <div id="son-fiyat"></div>
-                </div>
+                document.getElementById("son-fiyat").innerHTML = satis_fiyat;<br />
+                }
+              </p>
+              <img src="../media/script-img8.PNG" />
             </div>
+          </div>
         </div>
+
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="fiyat" type="number" placeholder="Ürün Fiyatı" />
+            <input id="vergi" type="number" placeholder="Vergi Miktarı" />
+            <input id="kar" type="number" placeholder="Kar Miktarı" />
+            <input
+              type="button"
+              onclick="vergi_kar_hesapla()"
+              value="onaylayınız"
+            />
+            <div id="son-fiyat"></div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script>
+      function vergi_kar_hesapla() {
+        var fiyat = Number(document.getElementById("fiyat").value);
+        var vergi = Number(document.getElementById("vergi").value);
+        var kar = Number(document.getElementById("kar").value);
+        var satis_fiyat = (fiyat =
+          fiyat + (fiyat * vergi) / 100 + (fiyat * kar) / 100);
+
+        document.getElementById("son-fiyat").innerHTML = satis_fiyat;
+      }
+    </script>
+  </body>
 </html>

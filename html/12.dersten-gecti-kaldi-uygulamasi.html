@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Java Script</title>
     <link rel="stylesheet" href="../style/section.css" />
-    <script src="../script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="content">
-        <div class="content-header">
-            <div>
-                <a href="../index.html"><img src="../media/home.png" /></a>
-            </div>
-            <div class="soru">
-                Öğrencinin bir dersten aldığı not klavyeden girilerek<br> başarı durumu ekrana geçti veya kaldı şeklinde yazan uygulamanın algoritmasını oluşturunuz .
-            </div>
-            <div><a href="https://github.com/berat02/Algoritma-uygulamalar"><img src="../media/github.png"/></a></div>
+      <div class="content-header">
+        <div>
+          <a href="../index.html"><img src="../media/home.png" /></a>
         </div>
-        <div class="nav-section">
-            <div class="section-panel">
-                <div class="section-header">Algoritma</div>
-                <div class="section">
-                    1) Başla <br>
-                    2) not gir<br>
-                    3) Eğer(not > 50 )<br>
-                    4) Öğrenci Dersten Geçti<br>
-                    5) değilse<br>
-                    6) Öğrenci Dersten Geçemedi<br>
-                    7) Bitir
-                </div>
+        <div class="soru">
+          Öğrencinin bir dersten aldığı not klavyeden girilerek<br />
+          başarı durumu ekrana geçti veya kaldı şeklinde yazan uygulamanın
+          algoritmasını oluşturunuz .
+        </div>
+        <div>
+          <a href="https://github.com/berat02/Algoritma-uygulamalar"
+            ><img src="../media/github.png"
+          /></a>
+        </div>
+      </div>
+      <div class="nav-section">
+        <div class="section-panel">
+          <div class="section-header">Algoritma</div>
+          <div class="section">
+            1) Başla <br />
+            2) not gir<br />
+            3) Eğer(not > 50 )<br />
+            4) Öğrenci Dersten Geçti<br />
+            5) değilse<br />
+            6) Öğrenci Dersten Geçemedi<br />
+            7) Bitir
+          </div>
+        </div>
+        <div class="section-panel">
+          <div class="section-header">Java Script</div>
+          <div class="section">
+            <div class="js">
+              <p>
+                function geçti_hesaplama(){<br />
+                var not_element=
+                Number(document.getElementById('not').value);<br />
+                var sonuc = document.getElementById("sonuc");<br />
+                if(not_element >= 50){<br />
+                sonuc.innerHTML = "Tebrikler Dersten Geçtiniz";<br />
+                sonuc.style.color="green";<br />
+                }else{<br />
+                sonuc.innerHTML = "Üzgünüm Dersten Geçemediniz";<br />
+                sonuc.style.color="green";<br />
+                }<br />
+                }
+              </p>
+              <img src="../media/script-img12.PNG" />
             </div>
-            <div class="section-panel">
-                <div class="section-header">Java Script</div>
-                <div class="section">
-                    <div class="js">
-                        <p>
-                            function geçti_hesaplama(){<br>
-                                var not_element= Number(document.getElementById('not').value);<br>
-                                var sonuc = document.getElementById("sonuc");<br>
-                                if(not_element >= 50){<br>
-                                    sonuc.innerHTML = "Tebrikler Dersten Geçtiniz";<br>
-                                    sonuc.style.color="green";<br>
-                                }else{<br>
-                                   sonuc.innerHTML = "Üzgünüm Dersten Geçemediniz";<br>
-                                   sonuc.style.color="green";<br>
-                                }<br>
-                            }
-                        </p>
-                        <img src="../media/script-img12.PNG">
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="section-panel">
-                <div class="section-header">Örnek</div>
-                <div class="section">
-                    <input id="not" type="number" placeholder="Notunuzu Giriniz">
-                    <input type="button" onclick="geçti_hesaplama()" value="onaylayınız" />
-                    <div id="sonuc"></div>
-                </div>
-            </div>
+        <div class="section-panel">
+          <div class="section-header">Örnek</div>
+          <div class="section">
+            <input id="not" type="number" placeholder="Notunuzu Giriniz" />
+            <input
+              type="button"
+              onclick="geçti_hesaplama()"
+              value="onaylayınız"
+            />
+            <div id="sonuc"></div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+    <script>
+      function geçti_hesaplama() {
+        var not_element = Number(document.getElementById("not").value);
+        var sonuc = document.getElementById("sonuc");
+        if (not_element >= 50) {
+          sonuc.innerHTML = "Tebrikler Dersten Geçtiniz";
+          sonuc.style.color = "green";
+        } else {
+          sonuc.innerHTML = "Üzgünüm Dersten Geçemediniz";
+          sonuc.style.color = "green";
+        }
+      }
+    </script>
+  </body>
 </html>
